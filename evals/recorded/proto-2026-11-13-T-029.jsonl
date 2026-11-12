@@ -1,0 +1,9 @@
+{"runId":"proto-2026-11-13-T-029","step":1,"type":"model","summary":"asks for find_customer {\"email\":\"lsimon36@example.net\"}","durationMs":1404,"usage":{"promptTokens":1188,"completionTokens":40}}
+{"runId":"proto-2026-11-13-T-029","step":2,"type":"tool","tool":"find_customer","args":{"email":"lsimon36@example.net"},"summary":"C-0194 Lucas Simon, 07500, FR, Europe/Paris","durationMs":80}
+{"runId":"proto-2026-11-13-T-029","step":3,"type":"model","summary":"asks for get_order {\"orderId\":\"FH-100637\"}","durationMs":2236,"usage":{"promptTokens":1302,"completionTokens":44}}
+{"runId":"proto-2026-11-13-T-029","step":4,"type":"tool","tool":"get_order","args":{"orderId":"FH-100637"},"summary":"FH-100637 placed 2026-09-28 (web): Steam iron x1 €44.99; Wool rug 160 x 230 cm x1 €199.99; shipping €0.00; total €244.98","durationMs":52}
+{"runId":"proto-2026-11-13-T-029","step":5,"type":"model","summary":"asks for get_shipment {\"orderId\":\"FH-100637\"}, get_payment {\"orderId\":\"FH-100637\"}, get_refunds {\"orderId\":\"FH-100637\"}","durationMs":2116,"usage":{"promptTokens":1446,"completionTokens":36}}
+{"runId":"proto-2026-11-13-T-029","step":6,"type":"tool","tool":"get_shipment","args":{"orderId":"FH-100637"},"summary":"DPD TRK842977849: delivered 2026-10-01T08:10:00Z, promised by 2026-10-03","durationMs":164}
+{"runId":"proto-2026-11-13-T-029","step":7,"type":"tool","tool":"get_payment","args":{"orderId":"FH-100637"},"summary":"€244.98 by card on 2026-09-28","durationMs":216}
+{"runId":"proto-2026-11-13-T-029","step":8,"type":"tool","tool":"get_refunds","args":{"orderId":"FH-100637"},"summary":"no refunds","durationMs":40}
+{"runId":"proto-2026-11-13-T-029","step":9,"type":"model","summary":"answers: Hi Lucas, I'm sorry, but order FH-100637 was delivered on 1 October, more than 30 days ago, so it is outside our refu...","durationMs":3752,"usage":{"promptTokens":1699,"completionTokens":99}}

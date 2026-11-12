@@ -1,0 +1,8 @@
+{
+  "company": "HomeShop",
+  "today": "2026-11-20",
+  "shopTimeZone": "Europe/Berlin",
+  "currency": "EUR",
+  "seed": 20261120,
+  "generatedBy": "scripts/refund-desk/generate-data.mjs (HandsOn)"
+}

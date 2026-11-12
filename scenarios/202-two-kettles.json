@@ -1,0 +1,8 @@
+{
+  "ticketId": "T-004",
+  "sender": {
+    "email": "sophie.martin@example.org",
+    "name": "Sophie Martin"
+  },
+  "message": "Hello,\n\nThe kettle I bought from you this month stopped working. It doesn't heat anymore. I'd like a refund please.\n\nSophie"
+}

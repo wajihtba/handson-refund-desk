@@ -1,0 +1,9 @@
+{"runId":"proto-2026-11-13-T-022","step":1,"type":"model","summary":"asks for find_customer {\"email\":\"paulwagner@example.com\"}","durationMs":2124,"usage":{"promptTokens":1244,"completionTokens":38}}
+{"runId":"proto-2026-11-13-T-022","step":2,"type":"tool","tool":"find_customer","args":{"email":"paulwagner@example.com"},"summary":"C-0173 Paul Wagner, 30053, DE, Europe/Berlin","durationMs":108}
+{"runId":"proto-2026-11-13-T-022","step":3,"type":"model","summary":"asks for get_order {\"orderId\":\"FH-101178\"}","durationMs":1772,"usage":{"promptTokens":1357,"completionTokens":44}}
+{"runId":"proto-2026-11-13-T-022","step":4,"type":"tool","tool":"get_order","args":{"orderId":"FH-101178"},"summary":"FH-101178 placed 2026-11-15 (web): Hand-painted espresso cups x1 €32.99; shipping €4.95; total €37.94","durationMs":84}
+{"runId":"proto-2026-11-13-T-022","step":5,"type":"model","summary":"asks for get_shipment {\"orderId\":\"FH-101178\"}, get_payment {\"orderId\":\"FH-101178\"}, get_refunds {\"orderId\":\"FH-101178\"}","durationMs":1852,"usage":{"promptTokens":1495,"completionTokens":78}}
+{"runId":"proto-2026-11-13-T-022","step":6,"type":"tool","tool":"get_shipment","args":{"orderId":"FH-101178"},"summary":"DPD TRK197751335: delivered 2026-11-17T11:04:00Z, promised by 2026-11-20","durationMs":80}
+{"runId":"proto-2026-11-13-T-022","step":7,"type":"tool","tool":"get_payment","args":{"orderId":"FH-101178"},"summary":"€37.94 by klarna on 2026-11-15","durationMs":280}
+{"runId":"proto-2026-11-13-T-022","step":8,"type":"tool","tool":"get_refunds","args":{"orderId":"FH-101178"},"summary":"no refunds","durationMs":272}
+{"runId":"proto-2026-11-13-T-022","step":9,"type":"model","summary":"answers: Hi Paul, no problem. I've recommended a full refund of €32.99 for the hand-painted espresso cups from order FH-101178...","durationMs":1760,"usage":{"promptTokens":1790,"completionTokens":115}}

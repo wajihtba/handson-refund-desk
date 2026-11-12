@@ -1,0 +1,9 @@
+{"runId":"proto-2026-11-13-T-032","step":1,"type":"model","summary":"asks for find_customer {\"email\":\"claurent22@example.com\"}","durationMs":1092,"usage":{"promptTokens":1220,"completionTokens":44}}
+{"runId":"proto-2026-11-13-T-032","step":2,"type":"tool","tool":"find_customer","args":{"email":"claurent22@example.com"},"summary":"C-0099 Camille Laurent, 48757, FR, Europe/Paris","durationMs":96}
+{"runId":"proto-2026-11-13-T-032","step":3,"type":"model","summary":"asks for get_order {\"orderId\":\"FH-100954\"}","durationMs":1156,"usage":{"promptTokens":1340,"completionTokens":18}}
+{"runId":"proto-2026-11-13-T-032","step":4,"type":"tool","tool":"get_order","args":{"orderId":"FH-100954"},"summary":"FH-100954 placed 2026-10-24 (web): Milk frother x1 €24.99; shipping €4.95; total €29.94","durationMs":212}
+{"runId":"proto-2026-11-13-T-032","step":5,"type":"model","summary":"asks for get_shipment {\"orderId\":\"FH-100954\"}, get_payment {\"orderId\":\"FH-100954\"}, get_refunds {\"orderId\":\"FH-100954\"}","durationMs":1260,"usage":{"promptTokens":1447,"completionTokens":102}}
+{"runId":"proto-2026-11-13-T-032","step":6,"type":"tool","tool":"get_shipment","args":{"orderId":"FH-100954"},"summary":"DPD TRK546250777: delivered 2026-10-29T17:56:00Z, promised by 2026-10-29","durationMs":296}
+{"runId":"proto-2026-11-13-T-032","step":7,"type":"tool","tool":"get_payment","args":{"orderId":"FH-100954"},"summary":"€29.94 by klarna on 2026-10-24","durationMs":124}
+{"runId":"proto-2026-11-13-T-032","step":8,"type":"tool","tool":"get_refunds","args":{"orderId":"FH-100954"},"summary":"no refunds","durationMs":260}
+{"runId":"proto-2026-11-13-T-032","step":9,"type":"model","summary":"answers: Hi Camille, I'm sorry the milk frother arrived damaged. Order FH-100954 was delivered on 29 October, within our 30-da...","durationMs":2536,"usage":{"promptTokens":1766,"completionTokens":118}}

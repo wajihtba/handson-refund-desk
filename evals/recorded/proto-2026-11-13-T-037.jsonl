@@ -1,0 +1,11 @@
+{"runId":"proto-2026-11-13-T-037","step":1,"type":"model","summary":"asks for find_customer {\"email\":\"noorjansen@example.com\"}","durationMs":2076,"usage":{"promptTokens":1204,"completionTokens":30}}
+{"runId":"proto-2026-11-13-T-037","step":2,"type":"tool","tool":"find_customer","args":{"email":"noorjansen@example.com"},"summary":"C-0008 Noor Jansen, 7292 BF, NL, Europe/Amsterdam","durationMs":276}
+{"runId":"proto-2026-11-13-T-037","step":3,"type":"model","summary":"asks for list_orders {\"customerId\":\"C-0008\"}","durationMs":956,"usage":{"promptTokens":1310,"completionTokens":28}}
+{"runId":"proto-2026-11-13-T-037","step":4,"type":"tool","tool":"list_orders","args":{"customerId":"C-0008"},"summary":"1 orders, newest first: FH-101077 2026-11-04 Stand mixer","durationMs":96}
+{"runId":"proto-2026-11-13-T-037","step":5,"type":"model","summary":"asks for get_order {\"orderId\":\"FH-101077\"}","durationMs":980,"usage":{"promptTokens":1417,"completionTokens":24}}
+{"runId":"proto-2026-11-13-T-037","step":6,"type":"tool","tool":"get_order","args":{"orderId":"FH-101077"},"summary":"FH-101077 placed 2026-11-04 (web): Stand mixer x1 €249.99; shipping €9.95; total €259.94","durationMs":180}
+{"runId":"proto-2026-11-13-T-037","step":7,"type":"model","summary":"asks for get_shipment {\"orderId\":\"FH-101077\"}, get_payment {\"orderId\":\"FH-101077\"}, get_refunds {\"orderId\":\"FH-101077\"}","durationMs":1828,"usage":{"promptTokens":1530,"completionTokens":36}}
+{"runId":"proto-2026-11-13-T-037","step":8,"type":"tool","tool":"get_shipment","args":{"orderId":"FH-101077"},"summary":"DHL TRK086517399: delivered 2026-11-06T14:47:00Z, promised by 2026-11-06","durationMs":128}
+{"runId":"proto-2026-11-13-T-037","step":9,"type":"tool","tool":"get_payment","args":{"orderId":"FH-101077"},"summary":"€259.94 by card on 2026-11-04","durationMs":192}
+{"runId":"proto-2026-11-13-T-037","step":10,"type":"tool","tool":"get_refunds","args":{"orderId":"FH-101077"},"summary":"no refunds","durationMs":116}
+{"runId":"proto-2026-11-13-T-037","step":11,"type":"model","summary":"answers: Hi Noor, I'm sorry the stand mixer arrived like that. Order FH-101077 was delivered on 6 November, so I've recommende...","durationMs":3528,"usage":{"promptTokens":1783,"completionTokens":138}}

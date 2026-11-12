@@ -1,0 +1,167 @@
+/* Plain CSS for the desk. Provided. */
+:root {
+  --bg: #f6f5f2;
+  --card: #ffffff;
+  --text: #1f2328;
+  --muted: #646b73;
+  --line: #e2e0da;
+  --accent: #1d6f5f;
+  --warn-bg: #fff6dd;
+  --warn-line: #e8c96a;
+  --error: #b42318;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+body {
+  margin: 0;
+}
+a {
+  color: var(--accent);
+}
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 12px 24px;
+  background: var(--card);
+  border-bottom: 1px solid var(--line);
+}
+.brand {
+  font-weight: 600;
+}
+.topbar nav {
+  display: flex;
+  gap: 16px;
+}
+.topbar nav a {
+  text-decoration: none;
+  color: var(--muted);
+}
+.topbar nav a.active {
+  color: var(--text);
+  font-weight: 600;
+}
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px 24px 48px;
+}
+h1 {
+  font-size: 1.4rem;
+}
+h2 {
+  font-size: 1rem;
+  margin-top: 0;
+}
+table.inbox {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card);
+}
+.inbox th,
+.inbox td {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.92rem;
+}
+.inbox th {
+  color: var(--muted);
+  font-weight: 500;
+}
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  background: #e9ecef;
+  vertical-align: middle;
+}
+.badge-new {
+  background: #e3ecfb;
+}
+.badge-proposed,
+.badge-pending_approval {
+  background: var(--warn-bg);
+}
+.badge-approved,
+.badge-refunded,
+.badge-replied {
+  background: #dcf2e7;
+}
+.badge-rejected {
+  background: #fbe3e1;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+.message {
+  white-space: pre-wrap;
+}
+.muted,
+.empty {
+  color: var(--muted);
+}
+.error {
+  color: var(--error);
+}
+.info {
+  color: var(--accent);
+}
+.not-built {
+  background: var(--warn-bg);
+  border: 1px dashed var(--warn-line);
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.actions p {
+  flex-basis: 100%;
+  margin: 0;
+}
+button {
+  font: inherit;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 12px;
+  margin: 0 0 8px;
+}
+dt {
+  color: var(--muted);
+}
+dd {
+  margin: 0;
+}
+@media (max-width: 720px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "errors": [
+    {
+      "tool": "get_order",
+      "when": {
+        "orderId": "FH-101131"
+      },
+      "error": "timeout",
+      "times": 1
+    },
+    {
+      "tool": "get_shipment",
+      "when": {
+        "orderId": "FH-100701"
+      },
+      "error": "server_error",
+      "times": 1
+    },
+    {
+      "tool": "find_customer",
+      "when": {
+        "email": "eruiz90@mail.example"
+      },
+      "error": "timeout",
+      "times": 1
+    },
+    {
+      "tool": "get_payment",
+      "when": {
+        "customerId": "C-0213"
+      },
+      "error": "server_error",
+      "times": "always"
+    }
+  ]
+}

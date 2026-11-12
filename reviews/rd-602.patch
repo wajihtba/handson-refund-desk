@@ -1,0 +1,102 @@
+diff --git a/evals/provided/order-search.jsonl b/evals/provided/order-search.jsonl
+new file mode 100644
+index 0000000..5ade95a
+--- /dev/null
++++ b/evals/provided/order-search.jsonl
+@@ -0,0 +1,6 @@
++{"id":"order-search-01","customerEmail":"sofiapappa@example.org","message":"The rice cooker I ordered has a cracked lid. Can I get a refund?","expected":{"orderId":"FH-101174"}}
++{"id":"order-search-02","customerEmail":"malmeida57@mail.example","message":"My kitchen scale shows the wrong weight. I'd like my money back.","expected":{"orderId":"FH-100212"}}
++{"id":"order-search-03","customerEmail":"sophie.martin@example.org","message":"The kettle I bought this month stopped working.","expected":{"orderId":"FH-101117"}}
++{"id":"order-search-04","customerEmail":"tiago.carvalho@example.org","message":"The spice rack arrived with a broken shelf.","expected":{"orderId":"FH-100941"}}
++{"id":"order-search-05","customerEmail":"sophie.martin@example.org","message":"My kettle leaks. I want a refund.","expected":{"orderId":"FH-101117"}}
++{"id":"order-search-06","customerEmail":"kacperwojcik@example.org","message":"The coffee grinder makes a loud noise since the first day.","expected":{"orderId":"FH-100882"}}
+diff --git a/src/agent/tools/search.test.ts b/src/agent/tools/search.test.ts
+new file mode 100644
+index 0000000..bb8e919
+--- /dev/null
++++ b/src/agent/tools/search.test.ts
+@@ -0,0 +1,32 @@
++import assert from "node:assert/strict"
++import { test } from "node:test"
++
++import { Shop } from "../../server/shop/api"
++import { searchOrders, searchOrdersTool } from "./search"
++
++const shop = new Shop({ faults: false })
++
++test("the tool is described to the model", () => {
++  assert.equal(searchOrdersTool.function.name, "search_orders")
++  assert.ok(searchOrdersTool.function.description.length > 0)
++})
++
++test("finds the order with the product", async () => {
++  const r = await searchOrders(JSON.stringify({ customerId: "C-0002", product: "Rice cooker" }), shop, { customerId: "C-0002" })
++  assert.deepEqual(r.ok && (r.data as { id: string }[]).map((o) => o.id), ["FH-101174"])
++})
++
++test("no order has the product", async () => {
++  const r = await searchOrders(JSON.stringify({ customerId: "C-0002", product: "Sofa" }), shop, { customerId: "C-0002" })
++  assert.deepEqual(r.ok && r.data, [])
++})
++
++test("picks the newest order when several fit", async () => {
++  const r = await searchOrders(JSON.stringify({ customerId: "C-0061", product: "kettle" }), shop, { customerId: "C-0061" })
++  assert.deepEqual(r.ok && (r.data as { id: string }[]).map((o) => o.id), ["FH-101117"])
++})
++
++test("arguments that aren't JSON are refused", async () => {
++  const r = await searchOrders("{oops", shop, { customerId: "C-0002" })
++  assert.equal(r.ok, false)
++})
+diff --git a/src/agent/tools/search.ts b/src/agent/tools/search.ts
+index c2f29b9..0cc59b7 100644
+--- a/src/agent/tools/search.ts
++++ b/src/agent/tools/search.ts
+@@ -26,12 +26,42 @@ import type { ToolResult } from "./index"
+ 
+ export const searchOrdersTool: ToolDefinition = {
+   type: "function",
+-  function: { name: "search_orders", description: "Not built yet: RD-602", parameters: { type: "object", properties: {} } },
++  function: {
++    name: "search_orders",
++    description: "Searches a customer's orders by product name and returns the matching order.",
++    parameters: {
++      type: "object",
++      properties: {
++        customerId: { type: "string", description: "The customer whose orders to search, like C-0134." },
++        product: { type: "string", description: "Part of a product name, like kettle." },
++      },
++      required: ["customerId", "product"],
++    },
++  },
+ }
+ 
++type FoundOrder = { id: string; placedAt: string; products: string[] }
++
+ export async function searchOrders(rawArgs: string, shop: Shop, ctx: { customerId: string }): Promise<ToolResult> {
+-  void rawArgs
+-  void shop
+-  void ctx
+-  throw new Error("Not built yet: RD-602")
++  let args: { customerId?: string; product: string }
++  try {
++    args = JSON.parse(rawArgs)
++  } catch {
++    return { ok: false, error: { code: "invalid_arguments", message: "The arguments are not valid JSON." } }
++  }
++  // The model knows which customer it is helping, so it passes the id.
++  const customerId = args.customerId ?? ctx.customerId
++  const wanted = args.product.trim()
++  // listOrders returns the newest order first.
++  const orders = await shop.listOrders({ customerId })
++  const found: FoundOrder[] = orders
++    .map((o) => ({ id: o.id, placedAt: o.placedAt, products: o.items.map((it) => productName(shop, it.productId)) }))
++    .filter((o) => o.products.some((name) => name.includes(wanted)))
++  // When several orders fit, the newest is almost always the one the
++  // customer means, and returning only that one saves the model a step.
++  return { ok: true, data: found.slice(0, 1) }
++}
++
++function productName(shop: Shop, productId: string): string {
++  return shop.data.products.find((p) => p.id === productId)?.name ?? productId
+ }

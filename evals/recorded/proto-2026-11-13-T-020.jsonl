@@ -1,0 +1,9 @@
+{"runId":"proto-2026-11-13-T-020","step":1,"type":"model","summary":"asks for find_customer {\"email\":\"maria.santos@example.org\"}","durationMs":1572,"usage":{"promptTokens":1196,"completionTokens":36}}
+{"runId":"proto-2026-11-13-T-020","step":2,"type":"tool","tool":"find_customer","args":{"email":"maria.santos@example.org"},"summary":"C-0199 Maria Santos, 8028-060, PT, Europe/Lisbon","durationMs":76}
+{"runId":"proto-2026-11-13-T-020","step":3,"type":"model","summary":"asks for get_order {\"orderId\":\"FH-101020\"}","durationMs":2284,"usage":{"promptTokens":1308,"completionTokens":40}}
+{"runId":"proto-2026-11-13-T-020","step":4,"type":"tool","tool":"get_order","args":{"orderId":"FH-101020"},"summary":"FH-101020 placed 2026-10-29 (web): Bath towel set x1 €34.99; Stoneware dinner set, 12 pieces x1 €69.99; shipping €0.00; total €104.98","durationMs":180}
+{"runId":"proto-2026-11-13-T-020","step":5,"type":"model","summary":"asks for get_shipment {\"orderId\":\"FH-101020\"}, get_payment {\"orderId\":\"FH-101020\"}, get_refunds {\"orderId\":\"FH-101020\"}","durationMs":996,"usage":{"promptTokens":1452,"completionTokens":24}}
+{"runId":"proto-2026-11-13-T-020","step":6,"type":"tool","tool":"get_shipment","args":{"orderId":"FH-101020"},"summary":"CTT TRK795746430: delivered 2026-11-01T22:08:00Z, promised by 2026-11-03","durationMs":156}
+{"runId":"proto-2026-11-13-T-020","step":7,"type":"tool","tool":"get_payment","args":{"orderId":"FH-101020"},"summary":"€104.98 by paypal on 2026-10-29","durationMs":136}
+{"runId":"proto-2026-11-13-T-020","step":8,"type":"tool","tool":"get_refunds","args":{"orderId":"FH-101020"},"summary":"no refunds","durationMs":212}
+{"runId":"proto-2026-11-13-T-020","step":9,"type":"model","summary":"answers: Hi Maria, no problem. Order FH-101020 was delivered on 1 November, within our 30-day window, so I've recommended a re...","durationMs":3912,"usage":{"promptTokens":1693,"completionTokens":139}}

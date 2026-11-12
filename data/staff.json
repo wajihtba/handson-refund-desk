@@ -1,0 +1,26 @@
+[
+  {
+    "id": "S-01",
+    "name": "Tomás Ribeiro",
+    "email": "tomas.ribeiro@homeshop.example",
+    "role": "agent"
+  },
+  {
+    "id": "S-02",
+    "name": "Eva Schulz",
+    "email": "eva.schulz@homeshop.example",
+    "role": "agent"
+  },
+  {
+    "id": "S-03",
+    "name": "Mira Janssen",
+    "email": "mira.janssen@homeshop.example",
+    "role": "support_lead"
+  },
+  {
+    "id": "S-04",
+    "name": "Pieter de Vries",
+    "email": "pieter.devries@homeshop.example",
+    "role": "finance"
+  }
+]

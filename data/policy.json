@@ -1,0 +1,41 @@
+{
+  "currency": "EUR",
+  "windowDays": 30,
+  "partialPercent": 80,
+  "leadApprovalAboveCents": 5000,
+  "financeApprovalAboveCents": 20000,
+  "supportLeadId": "S-03",
+  "financeApproverId": "S-04",
+  "rules": [
+    {
+      "id": "R1",
+      "text": "A refund is possible within 30 days of delivery, counted from the delivery date in the customer's time zone. A lost parcel (status lost, past its promisedBy date) has no window: it is refunded in full, shipping included."
+    },
+    {
+      "id": "R2",
+      "text": "Final-sale items are never refunded. A damaged final-sale item can be replaced."
+    },
+    {
+      "id": "R3",
+      "text": "An opened item gets a partial refund of 80% of its price, unless it arrived damaged."
+    },
+    {
+      "id": "R4",
+      "text": "Shipping costs are refunded only when the order arrived late (after promisedBy), arrived damaged, or was lost."
+    },
+    {
+      "id": "R5",
+      "text": "Each order item is refunded at most once."
+    },
+    {
+      "id": "R6",
+      "text": "A refund never exceeds what the customer paid for the order, minus earlier refunds."
+    }
+  ],
+  "approvals": [
+    "A refund of €50 or less needs no approval.",
+    "Above €50, the support lead approves.",
+    "Above €200, the support lead and finance both approve.",
+    "A rejected approval means no refund: the ticket moves to rejected."
+  ]
+}

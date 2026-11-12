@@ -1,0 +1,11 @@
+{"runId":"proto-2026-11-13-T-014","step":1,"type":"model","summary":"asks for find_customer {\"email\":\"javier.navarro@example.net\"}","durationMs":1388,"usage":{"promptTokens":1292,"completionTokens":36}}
+{"runId":"proto-2026-11-13-T-014","step":2,"type":"tool","tool":"find_customer","args":{"email":"javier.navarro@example.net"},"summary":"C-0077 Javier Navarro, 28013, ES, Europe/Madrid","durationMs":52}
+{"runId":"proto-2026-11-13-T-014","step":3,"type":"model","summary":"asks for list_orders {\"customerId\":\"C-0077\"}","durationMs":1924,"usage":{"promptTokens":1404,"completionTokens":36}}
+{"runId":"proto-2026-11-13-T-014","step":4,"type":"tool","tool":"list_orders","args":{"customerId":"C-0077"},"summary":"2 orders, newest first: FH-101062 2026-11-03 Air fryer 5.5 L; FH-100230 2026-08-22 Linen napkins, set of 4","durationMs":264}
+{"runId":"proto-2026-11-13-T-014","step":5,"type":"model","summary":"asks for get_order {\"orderId\":\"FH-101062\"}","durationMs":1404,"usage":{"promptTokens":1535,"completionTokens":44}}
+{"runId":"proto-2026-11-13-T-014","step":6,"type":"tool","tool":"get_order","args":{"orderId":"FH-101062"},"summary":"FH-101062 placed 2026-11-03 (marketplace): Air fryer 5.5 L x1 €89.99; shipping €9.95; total €99.94","durationMs":232}
+{"runId":"proto-2026-11-13-T-014","step":7,"type":"model","summary":"asks for get_shipment {\"orderId\":\"FH-101062\"}, get_payment {\"orderId\":\"FH-101062\"}, get_refunds {\"orderId\":\"FH-101062\"}","durationMs":1676,"usage":{"promptTokens":1672,"completionTokens":72}}
+{"runId":"proto-2026-11-13-T-014","step":8,"type":"tool","tool":"get_shipment","args":{"orderId":"FH-101062"},"summary":"Correos TRK565920677: delivered 2026-11-05T08:50:00Z, promised by 2026-11-05","durationMs":148}
+{"runId":"proto-2026-11-13-T-014","step":9,"type":"tool","tool":"get_payment","args":{"orderId":"FH-101062"},"summary":"€99.94 by paypal on 2026-11-03","durationMs":92}
+{"runId":"proto-2026-11-13-T-014","step":10,"type":"tool","tool":"get_refunds","args":{"orderId":"FH-101062"},"summary":"no refunds","durationMs":176}
+{"runId":"proto-2026-11-13-T-014","step":11,"type":"model","summary":"answers: Hi Javier, I'm sorry your air fryer stopped working. Order FH-101062 is within our 30-day window, so I've recommended...","durationMs":1768,"usage":{"promptTokens":1962,"completionTokens":121}}

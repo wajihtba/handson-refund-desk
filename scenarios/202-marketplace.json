@@ -1,0 +1,8 @@
+{
+  "ticketId": "T-014",
+  "sender": {
+    "email": "javier.navarro@example.net",
+    "name": "Javier Navarro"
+  },
+  "message": "Hello,\n\nMy air fryer stopped working after two weeks. The display stays black. I want my money back.\n\nJavier Navarro"
+}

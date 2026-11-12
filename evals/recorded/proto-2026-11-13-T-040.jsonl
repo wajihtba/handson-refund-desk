@@ -1,0 +1,11 @@
+{"runId":"proto-2026-11-13-T-040","step":1,"type":"model","summary":"asks for find_customer {\"email\":\"lena.hoffmann@example.org\"}","durationMs":1684,"usage":{"promptTokens":1292,"completionTokens":26}}
+{"runId":"proto-2026-11-13-T-040","step":2,"type":"tool","tool":"find_customer","args":{"email":"lena.hoffmann@example.org"},"summary":"C-0150 Lena Hoffmann, 50667, DE, Europe/Berlin","durationMs":292}
+{"runId":"proto-2026-11-13-T-040","step":3,"type":"model","summary":"asks for list_orders {\"customerId\":\"C-0150\"}","durationMs":1692,"usage":{"promptTokens":1393,"completionTokens":26}}
+{"runId":"proto-2026-11-13-T-040","step":4,"type":"tool","tool":"list_orders","args":{"customerId":"C-0150"},"summary":"1 orders, newest first: FH-100864 2026-10-16 Coffee grinder","durationMs":264}
+{"runId":"proto-2026-11-13-T-040","step":5,"type":"model","summary":"asks for get_order {\"orderId\":\"FH-100864\"}","durationMs":1532,"usage":{"promptTokens":1499,"completionTokens":32}}
+{"runId":"proto-2026-11-13-T-040","step":6,"type":"tool","tool":"get_order","args":{"orderId":"FH-100864"},"summary":"FH-100864 placed 2026-10-16 (web): Coffee grinder x1 €39.99; shipping €4.95; total €44.94","durationMs":92}
+{"runId":"proto-2026-11-13-T-040","step":7,"type":"model","summary":"asks for get_shipment {\"orderId\":\"FH-100864\"}, get_payment {\"orderId\":\"FH-100864\"}, get_refunds {\"orderId\":\"FH-100864\"}","durationMs":1924,"usage":{"promptTokens":1621,"completionTokens":102}}
+{"runId":"proto-2026-11-13-T-040","step":8,"type":"tool","tool":"get_shipment","args":{"orderId":"FH-100864"},"summary":"DHL TRK268017729: delivered 2026-10-20T23:30:00Z, promised by 2026-10-21","durationMs":140}
+{"runId":"proto-2026-11-13-T-040","step":9,"type":"tool","tool":"get_payment","args":{"orderId":"FH-100864"},"summary":"€44.94 by card on 2026-10-16","durationMs":244}
+{"runId":"proto-2026-11-13-T-040","step":10,"type":"tool","tool":"get_refunds","args":{"orderId":"FH-100864"},"summary":"no refunds","durationMs":188}
+{"runId":"proto-2026-11-13-T-040","step":11,"type":"model","summary":"answers: Hi Lena, I'm sorry about the grinder. Order FH-100864 was delivered on 20 October, more than 30 days ago, so it is ou...","durationMs":3384,"usage":{"promptTokens":1939,"completionTokens":102}}

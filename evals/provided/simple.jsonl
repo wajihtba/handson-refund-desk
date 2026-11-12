@@ -1,0 +1,14 @@
+{"id":"simple-01","group":"simple","customerEmail":"edevries10@example.com","message":"I want to return the wine glasses. They arrived cracked.","expected":{"orderId":"FH-101129","action":"refund"}}
+{"id":"simple-02","group":"simple","customerEmail":"eruiz90@mail.example","message":"My throw blanket arrived broken. Can I get a refund?","expected":{"orderId":"FH-101063","action":"refund"}}
+{"id":"simple-03","group":"simple","customerEmail":"tiago.carvalho@example.org","message":"I want to return the spice rack. It arrived cracked.","expected":{"orderId":"FH-100941","action":"refund"}}
+{"id":"simple-04","group":"simple","customerEmail":"julien.roux@example.com","message":"The toaster I ordered came damaged. What can you do?","expected":{"orderId":"FH-101000","action":"refund"}}
+{"id":"simple-05","group":"simple","customerEmail":"cromero90@example.com","message":"My bread bin arrived broken. Can I get a refund?","expected":{"orderId":"FH-101033","action":"refund"}}
+{"id":"simple-06","group":"simple","customerEmail":"lrichter96@example.org","message":"I want to return the storage jars. They arrived cracked.","expected":{"orderId":"FH-100939","action":"refund"}}
+{"id":"simple-07","group":"simple","customerEmail":"tvisser85@example.org","message":"My cushion cover arrived broken. Can I get a refund?","expected":{"orderId":"FH-101169","action":"refund"}}
+{"id":"simple-08","group":"simple","customerEmail":"jesse.bos@example.org","message":"I want to return the shower curtain. It arrived cracked.","expected":{"orderId":"FH-100885","action":"refund"}}
+{"id":"simple-09","group":"simple","customerEmail":"filip.pawlak@example.org","message":"My kitchen scale arrived broken. Can I get a refund?","expected":{"orderId":"FH-101003","action":"refund"}}
+{"id":"simple-10","group":"simple","customerEmail":"chloe.martin@example.com","message":"My pressure cooker arrived broken. Can I get a refund?","expected":{"orderId":"FH-101112","action":"refund"}}
+{"id":"simple-11","group":"simple","customerEmail":"thomaslaurent@example.com","message":"I want to return the duvet cover. It arrived cracked.","expected":{"orderId":"FH-101119","action":"refund"}}
+{"id":"simple-12","group":"simple","customerEmail":"fweber10@example.com","message":"My casserole arrived broken. Can I get a refund?","expected":{"orderId":"FH-101092","action":"refund"}}
+{"id":"simple-13","group":"simple","customerEmail":"juliapawlak@example.org","message":"My casserole arrived broken. Can I get a refund?","expected":{"orderId":"FH-101139","action":"refund"}}
+{"id":"simple-14","group":"simple","customerEmail":"antoinelefebvre@mail.example","message":"Hi, the cutting board arrived damaged. I'd like my money back.","expected":{"orderId":"FH-101016","action":"refund"}}

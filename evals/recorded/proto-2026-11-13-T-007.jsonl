@@ -1,0 +1,9 @@
+{"runId":"proto-2026-11-13-T-007","step":1,"type":"model","summary":"asks for find_customer {\"email\":\"lweber10@example.org\"}","durationMs":1236,"usage":{"promptTokens":1204,"completionTokens":32}}
+{"runId":"proto-2026-11-13-T-007","step":2,"type":"tool","tool":"find_customer","args":{"email":"lweber10@example.org"},"summary":"C-0039 Lena Weber, 13866, DE, Europe/Berlin","durationMs":160}
+{"runId":"proto-2026-11-13-T-007","step":3,"type":"model","summary":"asks for get_order {\"orderId\":\"FH-101198\"}","durationMs":1444,"usage":{"promptTokens":1310,"completionTokens":30}}
+{"runId":"proto-2026-11-13-T-007","step":4,"type":"tool","tool":"get_order","args":{"orderId":"FH-101198"},"summary":"FH-101198 placed 2026-11-16 (web): Fitted sheet, double x1 €24.99; Stainless steel saucepan set x1 €119.99; Serving platter x1 €29.99; shipping €0.00; total €174.97","durationMs":284}
+{"runId":"proto-2026-11-13-T-007","step":5,"type":"model","summary":"asks for get_shipment {\"orderId\":\"FH-101198\"}, get_payment {\"orderId\":\"FH-101198\"}, get_refunds {\"orderId\":\"FH-101198\"}","durationMs":1756,"usage":{"promptTokens":1455,"completionTokens":60}}
+{"runId":"proto-2026-11-13-T-007","step":6,"type":"tool","tool":"get_shipment","args":{"orderId":"FH-101198"},"summary":"DPD TRK526966925: delivered 2026-11-18T17:48:00Z, promised by 2026-11-21","durationMs":200}
+{"runId":"proto-2026-11-13-T-007","step":7,"type":"tool","tool":"get_payment","args":{"orderId":"FH-101198"},"summary":"€174.97 by klarna on 2026-11-16","durationMs":280}
+{"runId":"proto-2026-11-13-T-007","step":8,"type":"tool","tool":"get_refunds","args":{"orderId":"FH-101198"},"summary":"no refunds","durationMs":128}
+{"runId":"proto-2026-11-13-T-007","step":9,"type":"model","summary":"answers: Hi Lena, I'm sorry the fitted sheet arrived damaged. Order FH-101198 was delivered on 18 November, within our 30-day ...","durationMs":3680,"usage":{"promptTokens":1732,"completionTokens":132}}

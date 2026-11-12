@@ -1,0 +1,402 @@
+[
+  {
+    "id": "T-001",
+    "from": {
+      "email": "aleksandra.wrobel@example.net",
+      "name": "Aleksandra Wróbel"
+    },
+    "receivedAt": "2026-11-18T08:39:00Z",
+    "subject": "Kettle arrived broken",
+    "body": "Good morning,\n\nMy kettle from order FH-101019 arrived with a cracked lid and it leaks when I fill it. I would like my money back please.\n\nThank you,\nAleksandra"
+  },
+  {
+    "id": "T-002",
+    "from": {
+      "email": "laura.ruiz@example.org",
+      "name": "Laura Ruiz"
+    },
+    "receivedAt": "2026-11-18T09:08:00Z",
+    "subject": "Refund question",
+    "body": "Dear HomeShop team,\n\nI opened and tried the laundry basket but the colour is not what the photos showed. I want to return it.\n\nKind regards,\nLaura"
+  },
+  {
+    "id": "T-003",
+    "from": {
+      "email": "sbakker61@example.com",
+      "name": "Sanne Bakker"
+    },
+    "receivedAt": "2026-11-18T10:22:00Z",
+    "subject": "Damaged item",
+    "body": "Good morning,\n\nThe hand blender in my order FH-100968 arrived damaged. The box was crushed and the hand blender is broken. Can I get a refund?\n\nBest,\nSanne"
+  },
+  {
+    "id": "T-004",
+    "from": {
+      "email": "sophie.martin@example.org",
+      "name": "Sophie Martin"
+    },
+    "receivedAt": "2026-11-18T11:52:00Z",
+    "subject": "Kettle stopped working",
+    "body": "Hello,\n\nThe kettle I bought from you this month stopped working. It doesn't heat anymore. I'd like a refund please.\n\nSophie"
+  },
+  {
+    "id": "T-005",
+    "from": {
+      "email": "szymon.baran@example.net",
+      "name": "Szymon Baran"
+    },
+    "receivedAt": "2026-11-18T13:06:00Z",
+    "subject": "My order never arrived",
+    "body": "Hi,\n\nI ordered on 2026-09-17 (FH-100526) and nothing has arrived. The tracking stopped moving a long time ago. I want a refund.\n\nKind regards,\nSzymon Baran"
+  },
+  {
+    "id": "T-006",
+    "from": {
+      "email": "fleur.devries@example.org",
+      "name": "Fleur de Vries"
+    },
+    "receivedAt": "2026-11-18T14:04:00Z",
+    "subject": "Where is my order?",
+    "body": "Hello,\n\nWhere is my order FH-101159? If it doesn't come this week I want to cancel and get my money back.\n\nBest,\nFleur"
+  },
+  {
+    "id": "T-007",
+    "from": {
+      "email": "lweber10@example.org",
+      "name": "Lena Weber"
+    },
+    "receivedAt": "2026-11-18T14:52:00Z",
+    "subject": "Order FH-101198 damaged",
+    "body": "Hi there,\n\nOrder FH 101198: the fitted sheet, double came broken. I have photos if you need them. Please refund it.\n\nThank you,\nLena Weber"
+  },
+  {
+    "id": "T-008",
+    "from": {
+      "email": "msanchez83@mail.example",
+      "name": "Marta Sánchez"
+    },
+    "receivedAt": "2026-11-18T16:14:00Z",
+    "subject": "Replacement please",
+    "body": "Good morning,\n\nThe chef's knife arrived with a chip on the edge. I'd like a new one instead of a refund.\n\nBest,\nMarta"
+  },
+  {
+    "id": "T-009",
+    "from": {
+      "email": "ana.f.home@example.net",
+      "name": "Ana Ferreira"
+    },
+    "receivedAt": "2026-11-18T16:45:00Z",
+    "subject": "Towels",
+    "body": "Hi,\n\nThe bath towels I ordered arrived with holes in two of them. I'm writing from my new email address because I can't get into the old one.\n\nAna Ferreira\nRua de Santa Catarina 112, 4000-322 Porto"
+  },
+  {
+    "id": "T-010",
+    "from": {
+      "email": "lschneider55@example.com",
+      "name": "Leon Schneider"
+    },
+    "receivedAt": "2026-11-18T18:03:00Z",
+    "subject": "Send back an item",
+    "body": "Dear HomeShop team,\n\nI bought the rug but I don't need it anymore. It's still in the original box, never opened. Can I return it?\n\nBest,\nLeon"
+  },
+  {
+    "id": "T-011",
+    "from": {
+      "email": "druiz82@example.org",
+      "name": "Diego Ruiz"
+    },
+    "receivedAt": "2026-11-18T18:48:00Z",
+    "subject": "Two orders",
+    "body": "Dear HomeShop team,\n\nTwo problems. The steam iron from one order arrived broken, and my other order, with the towels, came so late that I had to buy them somewhere else. I'd like a refund for the steam iron, and for the towels too (still unopened), with the shipping for that order.\n\nKind regards,\nDiego"
+  },
+  {
+    "id": "T-012",
+    "from": {
+      "email": "ruiferreira@example.net",
+      "name": "Rui Ferreira"
+    },
+    "receivedAt": "2026-11-18T20:10:00Z",
+    "subject": "Late delivery",
+    "body": "Good morning,\n\nI paid for delivery and my order FH-101058 came days after the date you promised. I needed the throw blanket for guests that weekend, so it is no use to me now. It is still in the packaging. Please refund it, and the shipping cost too.\n\nKind regards,\nRui"
+  },
+  {
+    "id": "T-013",
+    "from": {
+      "email": "chloeroux@example.net",
+      "name": "Chloé Roux"
+    },
+    "receivedAt": "2026-11-18T21:23:00Z",
+    "subject": "Damaged item",
+    "body": "Dear HomeShop team,\n\nI received order FH-101105 yesterday and the pressure cooker was already broken inside the packaging. What can you do?\n\nKind regards,\nChloé Roux"
+  },
+  {
+    "id": "T-014",
+    "from": {
+      "email": "javier.navarro@example.net",
+      "name": "Javier Navarro"
+    },
+    "receivedAt": "2026-11-18T22:04:00Z",
+    "subject": "Air fryer broken",
+    "body": "Hello,\n\nMy air fryer stopped working after two weeks. The display stays black. I want my money back.\n\nJavier Navarro"
+  },
+  {
+    "id": "T-015",
+    "from": {
+      "email": "lena.koch@example.com",
+      "name": "Lena Koch"
+    },
+    "receivedAt": "2026-11-18T22:34:00Z",
+    "subject": "Refund for my order",
+    "body": "Hi,\n\nThe stand mixer from order FH-100982 was broken. Please refund it.\n\nKind regards,\nLena"
+  },
+  {
+    "id": "T-016",
+    "from": {
+      "email": "mgarcia29@example.net",
+      "name": "Marta García"
+    },
+    "receivedAt": "2026-11-18T23:18:00Z",
+    "subject": "Parcel not received",
+    "body": "Dear HomeShop team,\n\nThe tracking for my juicer says delivered, but I never got it. I was home all day and there is nothing with my neighbours either.\n\nBest,\nMarta García"
+  },
+  {
+    "id": "T-017",
+    "from": {
+      "email": "natalia.krawczyk@example.com",
+      "name": "Natalia Krawczyk"
+    },
+    "receivedAt": "2026-11-19T00:08:00Z",
+    "subject": "Problem with my order",
+    "body": "Hi,\n\nMy duvet was delivered with a big crack in it. Not happy. Refund please.\n\nThank you,\nNatalia"
+  },
+  {
+    "id": "T-018",
+    "from": {
+      "email": "camillegirard@example.com",
+      "name": "Camille Girard"
+    },
+    "receivedAt": "2026-11-19T01:36:00Z",
+    "subject": "My order never arrived",
+    "body": "Hi,\n\nI ordered on 2026-11-05 (FH-101082) and nothing has arrived. The tracking stopped moving a long time ago. I want a refund.\n\nRegards,\nCamille Girard"
+  },
+  {
+    "id": "T-019",
+    "from": {
+      "email": "sofiapappa@example.org",
+      "name": "Sofia Pappa"
+    },
+    "receivedAt": "2026-11-19T02:54:00Z",
+    "subject": "Problem with my order",
+    "body": "Hi,\n\nThe rice cooker came damaged, one side is completely bent. How do I return it?\n\nRegards,\nSofia Pappa"
+  },
+  {
+    "id": "T-020",
+    "from": {
+      "email": "maria.santos@example.org",
+      "name": "Maria Santos"
+    },
+    "receivedAt": "2026-11-19T03:19:00Z",
+    "subject": "Send back an item",
+    "body": "Good morning,\n\nI'd like to send back the bath towel set from order FH-101020. Unopened. How does the refund work?\n\nThanks,\nMaria"
+  },
+  {
+    "id": "T-021",
+    "from": {
+      "email": "jonas.becker@example.com",
+      "name": "Jonas Becker"
+    },
+    "receivedAt": "2026-11-19T04:41:00Z",
+    "subject": "Scratched frying pan",
+    "body": "Hi,\n\nThe frying pan from my last order already has scratches in the coating. I've only used it twice. Can I get a refund?\n\nJonas"
+  },
+  {
+    "id": "T-022",
+    "from": {
+      "email": "paulwagner@example.com",
+      "name": "Paul Wagner"
+    },
+    "receivedAt": "2026-11-19T06:10:00Z",
+    "subject": "Return",
+    "body": "Hello,\n\nThe espresso cups is not what I wanted. Please refund it, order FH-101178.\n\nThanks,\nPaul"
+  },
+  {
+    "id": "T-023",
+    "from": {
+      "email": "nvlachos87@example.org",
+      "name": "Nikos Vlachos"
+    },
+    "receivedAt": "2026-11-19T07:09:00Z",
+    "subject": "Not what I expected",
+    "body": "Hi there,\n\nThe napkins is smaller than I expected. I took it out of the box to check. Full refund please.\n\nThank you,\nNikos"
+  },
+  {
+    "id": "T-024",
+    "from": {
+      "email": "jesse.mulder@mail.example",
+      "name": "Jesse Mulder"
+    },
+    "receivedAt": "2026-11-19T08:25:00Z",
+    "subject": "Refund",
+    "body": "Hi,\n\nI'd like to return the serving platter I bought in October. I only now had time to try it and it's not right.\n\nThank you,\nJesse Mulder"
+  },
+  {
+    "id": "T-025",
+    "from": {
+      "email": "leonschmidt@example.net",
+      "name": "Leon Schmidt"
+    },
+    "receivedAt": "2026-11-19T09:13:00Z",
+    "subject": "Problem with my order",
+    "body": "Hi there,\n\nThe stand mixer I ordered arrived broken. Please tell me how I get my money back.\n\nRegards,\nLeon"
+  },
+  {
+    "id": "T-026",
+    "from": {
+      "email": "felix.becker@example.com",
+      "name": "Felix Becker"
+    },
+    "receivedAt": "2026-11-19T10:29:00Z",
+    "subject": "Return",
+    "body": "Hi there,\n\nI want to return the memory foam pillow. I don't like it after all.\n\nRegards,\nFelix"
+  },
+  {
+    "id": "T-027",
+    "from": {
+      "email": "bramvisser@example.net",
+      "name": "Bram Visser"
+    },
+    "receivedAt": "2026-11-19T11:28:00Z",
+    "subject": "Late delivery",
+    "body": "Good morning,\n\nThe order arrived a week late and I needed the kitchen scale for a birthday. I haven't opened it and don't need it anymore. Please refund it, with the shipping.\n\nThank you,\nBram"
+  },
+  {
+    "id": "T-028",
+    "from": {
+      "email": "felixklein@example.com",
+      "name": "Felix Klein"
+    },
+    "receivedAt": "2026-11-19T12:14:00Z",
+    "subject": "Problem with my order",
+    "body": "Good morning,\n\nI just unpacked my throw blanket and it doesn't work at all. I'd like a refund.\n\nRegards,\nFelix Klein"
+  },
+  {
+    "id": "T-029",
+    "from": {
+      "email": "lsimon36@example.net",
+      "name": "Lucas Simon"
+    },
+    "receivedAt": "2026-11-19T13:26:00Z",
+    "subject": "Refund",
+    "body": "Dear HomeShop team,\n\nThe steam iron stopped working. I bought it a while ago (order FH-100637). Can I get a refund?\n\nKind regards,\nLucas Simon"
+  },
+  {
+    "id": "T-030",
+    "from": {
+      "email": "kacper.sikora@example.com",
+      "name": "Kacper Sikora"
+    },
+    "receivedAt": "2026-11-19T14:45:00Z",
+    "subject": "Refund",
+    "body": "Hello,\n\nI want to return the steam iron from order FH-101071. It arrived damaged.\n\nKacper Sikora"
+  },
+  {
+    "id": "T-031",
+    "from": {
+      "email": "sdevries52@example.net",
+      "name": "Sanne de Vries"
+    },
+    "receivedAt": "2026-11-19T15:50:00Z",
+    "subject": "Late delivery",
+    "body": "Hi there,\n\nMy parcel was late. You promised it by 2026-11-11 and it arrived much later. By then I had bought the same mugs in a shop. I'd like to send yours back unopened and get my money back, delivery fee included.\n\nKind regards,\nSanne de Vries"
+  },
+  {
+    "id": "T-032",
+    "from": {
+      "email": "claurent22@example.com",
+      "name": "Camille Laurent"
+    },
+    "receivedAt": "2026-11-19T17:01:00Z",
+    "subject": "Two orders",
+    "body": "Hi there,\n\nFirst, the milk frother is damaged (order FH-100954). Second, I want to return the duvet cover I ordered later, it's unopened.\n\nRegards,\nCamille"
+  },
+  {
+    "id": "T-033",
+    "from": {
+      "email": "jsikora26@example.com",
+      "name": "Jakub Sikora"
+    },
+    "receivedAt": "2026-11-19T17:47:00Z",
+    "subject": "Wrong item",
+    "body": "Dear HomeShop team,\n\nI got my parcel today. Instead of the rice cooker there was something I didn't order. Please sort this out.\n\nThanks,\nJakub"
+  },
+  {
+    "id": "T-034",
+    "from": {
+      "email": "noor.dejong@example.com",
+      "name": "Noor de Jong"
+    },
+    "receivedAt": "2026-11-19T18:45:00Z",
+    "subject": "Damaged item",
+    "body": "Hi there,\n\nHello, FH-101106 arrived but the pressure cooker is cracked. I need a refund for it.\n\nThank you,\nNoor"
+  },
+  {
+    "id": "T-035",
+    "from": {
+      "email": "lklein59@mail.example",
+      "name": "Lukas Klein"
+    },
+    "receivedAt": "2026-11-19T19:26:00Z",
+    "subject": "Missing item",
+    "body": "Hi,\n\nMy order FH-100940 arrived but the robot vacuum was missing from the box. Everything else was there.\n\nKind regards,\nLukas"
+  },
+  {
+    "id": "T-036",
+    "from": {
+      "email": "manonsimon@example.net",
+      "name": "Manon Simon"
+    },
+    "receivedAt": "2026-11-19T21:25:00Z",
+    "subject": "Order FH-101123 damaged",
+    "body": "Good morning,\n\nMy wine glasses (order fh-101123) arrived scratched and dented. I don't want a replacement, I want a refund.\n\nKind regards,\nManon"
+  },
+  {
+    "id": "T-037",
+    "from": {
+      "email": "noorjansen@example.com",
+      "name": "Noor Jansen"
+    },
+    "receivedAt": "2026-11-19T22:41:00Z",
+    "subject": "Stand mixer",
+    "body": "Hi,\n\nThe stand mixer arrived with the bowl dented and the motor makes a burning smell. I want a full refund, including the express shipping I paid for.\n\nNoor Jansen"
+  },
+  {
+    "id": "T-038",
+    "from": {
+      "email": "evadevries@example.net",
+      "name": "Eva de Vries"
+    },
+    "receivedAt": "2026-11-19T23:08:00Z",
+    "subject": "Return",
+    "body": "Dear HomeShop team,\n\nChanged my mind about the coffee grinder, sorry. The box is sealed. Refund please.\n\nKind regards,\nEva"
+  },
+  {
+    "id": "T-039",
+    "from": {
+      "email": "alvarolopez@example.net",
+      "name": "Álvaro López"
+    },
+    "receivedAt": "2026-11-20T00:02:00Z",
+    "subject": "Return",
+    "body": "Hello,\n\nI used the saucepan set once and I don't like it. It works fine, it's just not for me. Can I have a refund?\n\nThank you,\nÁlvaro"
+  },
+  {
+    "id": "T-040",
+    "from": {
+      "email": "lena.hoffmann@example.org",
+      "name": "Lena Hoffmann"
+    },
+    "receivedAt": "2026-11-20T08:12:00Z",
+    "subject": "Coffee grinder return",
+    "body": "Hello,\n\nMy coffee grinder makes a terrible noise and the lid doesn't close properly. I'd like to return it for a refund.\n\nLena Hoffmann"
+  }
+]

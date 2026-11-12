@@ -1,0 +1,422 @@
+[
+  {
+    "id": "P-001",
+    "name": "Electric kettle 1.7 L",
+    "category": "Kitchen",
+    "priceCents": 3999,
+    "finalSale": false
+  },
+  {
+    "id": "P-002",
+    "name": "Glass electric kettle",
+    "category": "Kitchen",
+    "priceCents": 4999,
+    "finalSale": false
+  },
+  {
+    "id": "P-003",
+    "name": "Two-slice toaster",
+    "category": "Kitchen",
+    "priceCents": 3499,
+    "finalSale": false
+  },
+  {
+    "id": "P-004",
+    "name": "Four-slice toaster",
+    "category": "Kitchen",
+    "priceCents": 5999,
+    "finalSale": false
+  },
+  {
+    "id": "P-005",
+    "name": "Hand blender set",
+    "category": "Kitchen",
+    "priceCents": 4499,
+    "finalSale": false
+  },
+  {
+    "id": "P-006",
+    "name": "Stand mixer",
+    "category": "Kitchen",
+    "priceCents": 24999,
+    "finalSale": false
+  },
+  {
+    "id": "P-007",
+    "name": "Coffee grinder",
+    "category": "Kitchen",
+    "priceCents": 3999,
+    "finalSale": false
+  },
+  {
+    "id": "P-008",
+    "name": "Espresso machine",
+    "category": "Kitchen",
+    "priceCents": 18999,
+    "finalSale": false
+  },
+  {
+    "id": "P-009",
+    "name": "Milk frother",
+    "category": "Kitchen",
+    "priceCents": 2499,
+    "finalSale": false
+  },
+  {
+    "id": "P-010",
+    "name": "Kitchen scale",
+    "category": "Kitchen",
+    "priceCents": 1999,
+    "finalSale": false
+  },
+  {
+    "id": "P-011",
+    "name": "Non-stick frying pan 24 cm",
+    "category": "Cookware",
+    "priceCents": 2999,
+    "finalSale": false
+  },
+  {
+    "id": "P-012",
+    "name": "Non-stick frying pan 28 cm",
+    "category": "Cookware",
+    "priceCents": 3499,
+    "finalSale": false
+  },
+  {
+    "id": "P-013",
+    "name": "Cast iron casserole 4 L",
+    "category": "Cookware",
+    "priceCents": 8999,
+    "finalSale": false
+  },
+  {
+    "id": "P-014",
+    "name": "Stainless steel saucepan set",
+    "category": "Cookware",
+    "priceCents": 11999,
+    "finalSale": false
+  },
+  {
+    "id": "P-015",
+    "name": "Carbon steel wok 30 cm",
+    "category": "Cookware",
+    "priceCents": 3999,
+    "finalSale": false
+  },
+  {
+    "id": "P-016",
+    "name": "Roasting tin",
+    "category": "Cookware",
+    "priceCents": 2499,
+    "finalSale": false
+  },
+  {
+    "id": "P-017",
+    "name": "Pressure cooker 6 L",
+    "category": "Cookware",
+    "priceCents": 7999,
+    "finalSale": false
+  },
+  {
+    "id": "P-018",
+    "name": "Chef's knife 20 cm",
+    "category": "Cookware",
+    "priceCents": 5999,
+    "finalSale": false
+  },
+  {
+    "id": "P-019",
+    "name": "Knife block set",
+    "category": "Cookware",
+    "priceCents": 12999,
+    "finalSale": false
+  },
+  {
+    "id": "P-020",
+    "name": "Bamboo cutting board",
+    "category": "Cookware",
+    "priceCents": 1999,
+    "finalSale": false
+  },
+  {
+    "id": "P-021",
+    "name": "Personalised oak cutting board",
+    "category": "Cookware",
+    "priceCents": 4499,
+    "finalSale": true
+  },
+  {
+    "id": "P-022",
+    "name": "Stoneware dinner set, 12 pieces",
+    "category": "Tableware",
+    "priceCents": 6999,
+    "finalSale": false
+  },
+  {
+    "id": "P-023",
+    "name": "Porcelain mugs, set of 4",
+    "category": "Tableware",
+    "priceCents": 2499,
+    "finalSale": false
+  },
+  {
+    "id": "P-024",
+    "name": "Wine glasses, set of 6",
+    "category": "Tableware",
+    "priceCents": 3499,
+    "finalSale": false
+  },
+  {
+    "id": "P-025",
+    "name": "Cutlery set, 24 pieces",
+    "category": "Tableware",
+    "priceCents": 5999,
+    "finalSale": false
+  },
+  {
+    "id": "P-026",
+    "name": "Linen napkins, set of 4",
+    "category": "Tableware",
+    "priceCents": 1999,
+    "finalSale": false
+  },
+  {
+    "id": "P-027",
+    "name": "Serving platter",
+    "category": "Tableware",
+    "priceCents": 2999,
+    "finalSale": false
+  },
+  {
+    "id": "P-028",
+    "name": "Hand-painted espresso cups",
+    "category": "Tableware",
+    "priceCents": 3299,
+    "finalSale": true
+  },
+  {
+    "id": "P-029",
+    "name": "Cotton throw blanket",
+    "category": "Home",
+    "priceCents": 3999,
+    "finalSale": false
+  },
+  {
+    "id": "P-030",
+    "name": "Wool rug 160 x 230 cm",
+    "category": "Home",
+    "priceCents": 19999,
+    "finalSale": false
+  },
+  {
+    "id": "P-031",
+    "name": "Ceramic table lamp",
+    "category": "Home",
+    "priceCents": 6999,
+    "finalSale": false
+  },
+  {
+    "id": "P-032",
+    "name": "Floor lamp",
+    "category": "Home",
+    "priceCents": 12999,
+    "finalSale": false
+  },
+  {
+    "id": "P-033",
+    "name": "Clearance wall clock",
+    "category": "Home",
+    "priceCents": 2999,
+    "finalSale": true
+  },
+  {
+    "id": "P-034",
+    "name": "Scented candle set",
+    "category": "Home",
+    "priceCents": 1999,
+    "finalSale": true
+  },
+  {
+    "id": "P-035",
+    "name": "Glass vase",
+    "category": "Home",
+    "priceCents": 2499,
+    "finalSale": false
+  },
+  {
+    "id": "P-036",
+    "name": "Linen cushion cover",
+    "category": "Home",
+    "priceCents": 1499,
+    "finalSale": false
+  },
+  {
+    "id": "P-037",
+    "name": "Blackout curtains, pair",
+    "category": "Home",
+    "priceCents": 5999,
+    "finalSale": false
+  },
+  {
+    "id": "P-038",
+    "name": "Made-to-measure roller blind",
+    "category": "Home",
+    "priceCents": 8999,
+    "finalSale": true
+  },
+  {
+    "id": "P-039",
+    "name": "Cotton duvet cover set, double",
+    "category": "Bedding",
+    "priceCents": 5999,
+    "finalSale": false
+  },
+  {
+    "id": "P-040",
+    "name": "Cotton duvet cover set, king",
+    "category": "Bedding",
+    "priceCents": 6999,
+    "finalSale": false
+  },
+  {
+    "id": "P-041",
+    "name": "Feather pillow",
+    "category": "Bedding",
+    "priceCents": 2999,
+    "finalSale": true
+  },
+  {
+    "id": "P-042",
+    "name": "Memory foam pillow",
+    "category": "Bedding",
+    "priceCents": 4999,
+    "finalSale": true
+  },
+  {
+    "id": "P-043",
+    "name": "Duvet 10.5 tog",
+    "category": "Bedding",
+    "priceCents": 7999,
+    "finalSale": false
+  },
+  {
+    "id": "P-044",
+    "name": "Fitted sheet, double",
+    "category": "Bedding",
+    "priceCents": 2499,
+    "finalSale": false
+  },
+  {
+    "id": "P-045",
+    "name": "Bath towel set",
+    "category": "Bath",
+    "priceCents": 3499,
+    "finalSale": false
+  },
+  {
+    "id": "P-046",
+    "name": "Bath mat",
+    "category": "Bath",
+    "priceCents": 1999,
+    "finalSale": false
+  },
+  {
+    "id": "P-047",
+    "name": "Waffle bathrobe",
+    "category": "Bath",
+    "priceCents": 4999,
+    "finalSale": false
+  },
+  {
+    "id": "P-048",
+    "name": "Shower curtain",
+    "category": "Bath",
+    "priceCents": 1999,
+    "finalSale": false
+  },
+  {
+    "id": "P-049",
+    "name": "Glass storage jars, set of 3",
+    "category": "Storage",
+    "priceCents": 2499,
+    "finalSale": false
+  },
+  {
+    "id": "P-050",
+    "name": "Bread bin",
+    "category": "Storage",
+    "priceCents": 3499,
+    "finalSale": false
+  },
+  {
+    "id": "P-051",
+    "name": "Spice rack",
+    "category": "Storage",
+    "priceCents": 2999,
+    "finalSale": false
+  },
+  {
+    "id": "P-052",
+    "name": "Laundry basket",
+    "category": "Storage",
+    "priceCents": 2999,
+    "finalSale": false
+  },
+  {
+    "id": "P-053",
+    "name": "Shoe rack",
+    "category": "Storage",
+    "priceCents": 3999,
+    "finalSale": false
+  },
+  {
+    "id": "P-054",
+    "name": "Air fryer 5.5 L",
+    "category": "Appliances",
+    "priceCents": 8999,
+    "finalSale": false
+  },
+  {
+    "id": "P-055",
+    "name": "Slow cooker 3.5 L",
+    "category": "Appliances",
+    "priceCents": 4999,
+    "finalSale": false
+  },
+  {
+    "id": "P-056",
+    "name": "Rice cooker",
+    "category": "Appliances",
+    "priceCents": 3999,
+    "finalSale": false
+  },
+  {
+    "id": "P-057",
+    "name": "Robot vacuum cleaner",
+    "category": "Appliances",
+    "priceCents": 27999,
+    "finalSale": false
+  },
+  {
+    "id": "P-058",
+    "name": "Cordless stick vacuum",
+    "category": "Appliances",
+    "priceCents": 21999,
+    "finalSale": false
+  },
+  {
+    "id": "P-059",
+    "name": "Steam iron",
+    "category": "Appliances",
+    "priceCents": 4499,
+    "finalSale": false
+  },
+  {
+    "id": "P-060",
+    "name": "Clearance juicer",
+    "category": "Appliances",
+    "priceCents": 3999,
+    "finalSale": true
+  }
+]

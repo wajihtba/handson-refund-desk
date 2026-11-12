@@ -1,0 +1,36 @@
+{
+  "name": "refund-desk",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.22.0" },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "api": "node --import tsx src/server/index.ts",
+    "check": "tsc --noEmit",
+    "test": "node --import tsx --test \"src/**/*.test.ts\" \"src/**/*.test.tsx\"",
+    "agent": "tsx src/agent/cli.ts",
+    "bare": "tsx src/server/bare.ts",
+    "trace": "tsx src/server/trace-cli.ts",
+    "evals": "tsx src/agent/evals/run.ts",
+    "judge": "tsx src/agent/evals/judge-run.ts",
+    "build": "vite build",
+    "db:reset": "node -e \"require('node:fs').rmSync('.data', { recursive: true, force: true }); console.log('Removed .data/. The API creates the database again from data/inbox.json when it starts.')\""
+  },
+  "dependencies": {
+    "express": "5.3.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-router": "8.5.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/express": "5.0.6",
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vite": "8.3.4"
+  }
+}

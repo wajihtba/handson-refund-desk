@@ -1,0 +1,2 @@
+{"id":"example-01","group":"simple","customerEmail":"edevries10@example.com","message":"I want to return the wine glasses. They arrived cracked.","expected":{"orderId":"FH-101129","action":"refund"}}
+{"id":"example-02","group":"simple","customerEmail":"tiago.carvalho@example.org","message":"I want to return the spice rack. It arrived cracked.","expected":{"orderId":"FH-100941","action":"refund"}}
