@@ -22,9 +22,9 @@ export function firstMessages(message: string, opts: { customerEmail?: string } 
   const messages: Message[] = []
   if (opts.customerEmail) {
     messages.push({ role: "system", content: `${SYSTEM_PROMPT}\nThe message is from ${opts.customerEmail}.` })
-    messages.push({ role: "user", content: message })
   } else {
     messages.push({ role: "system", content: SYSTEM_PROMPT })
   }
+  messages.push({ role: "user", content: message })
   return messages
 }
